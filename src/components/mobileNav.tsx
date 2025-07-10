@@ -93,7 +93,7 @@ const MobileMenu = () => {
         ))}
 
         <section className="stagger-item text-3xl font-semibold capitalize flex items-center gap-2">
-          Theme <Theme />
+          Theme <Theme className="size-8" />
         </section>
       </div>
     </>

@@ -130,9 +130,26 @@ html {
     width: 0;
   }
 }
-
 @media (max-width: 770px) {
   .dark ::-webkit-scrollbar {
     width: 0;
   }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: var(--background);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--foreground);
 }

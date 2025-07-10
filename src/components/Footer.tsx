@@ -1,5 +1,6 @@
 import Link from "next/link";
 import WaitlistForm from "./Waitlist";
+import { Theme } from "./theme";
 export default function Footer() {
   return (
     <div>
@@ -50,8 +51,9 @@ export default function Footer() {
                 Contact
               </Link>
             </nav>
-            <p className="text-center text-sm text-muted-foreground md:text-left">
-              &copy; Build for Coder Vai's Coding challenge
+            <p className="text-center text-sm text-muted-foreground md:text-left flex items-center gap-2">
+              &copy; Build for Coder Vai's Coding challenge{" "}
+              <Theme className="text-foreground size-4" />
             </p>
           </div>
         </div>
