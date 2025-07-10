@@ -16,14 +16,17 @@ export default function Hero() {
         University Course & Event Management Software
       </h1>
       <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-       A Simple Fullstack Prototype webapp for CVIT made by Fardus wahid with Next.js typescript Shadcn UI Drizzle & Postgresql
+        A Simple Fullstack Prototype webapp for CVIT made by Fardus wahid with
+        Next.js typescript Shadcn UI Drizzle & Postgresql
       </p>
       <div className="flex flex-col justify-center gap-3 lg:gap-5 sm:flex-row w-10/12 sm:w-auto">
-        <Button className="sm:w-[300px]">
-          <span className="px-5 flex items-center gap-2">
-            Get Early Access <ArrowRight />
-          </span>
-        </Button>
+        <Link href="/api/auth/signin">
+          <Button className="sm:w-[300px]">
+            <span className="px-5 flex items-center gap-2">
+              Get Early Access <ArrowRight />
+            </span>
+          </Button>
+        </Link>
         <Button variant={"secondary"} className="sm:w-[300px]">
           <span className="flex items-center gap-2">
             {" "}
